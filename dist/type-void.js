@@ -14,3 +14,23 @@ showFormattedInfo({ id: 1, firstname: 'VERDUGO', lastname: 'JUAN' });
 var unusable;
 // unusable = null;  --> colocar "strict": false en tsconfig.json para poder hacer uso
 unusable = undefined;
+// Tipo: Never
+function handleError(code, message) {
+    // Process your code here
+    // Generate a message
+    throw new Error(message + ". Code: " + code);
+}
+try {
+    handleError(404, 'Not Found');
+}
+catch (error) {
+}
+function sumNumbers(limit) {
+    var sum = 0;
+    while (true) {
+        sum++;
+    }
+    // return sum;
+}
+sumNumbers(10);
+// ciclo infinito, programa nunca termina
