@@ -12,4 +12,6 @@ console.log('other id', otherId)
 
 let surprise: any = 'Hello typescript';
 //
-surprise.substring(6);
+const res = surprise.substring(6); 
+console.log('res', res);
+

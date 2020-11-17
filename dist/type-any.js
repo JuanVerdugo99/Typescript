@@ -1,4 +1,3 @@
-"use strict";
 // Tipo explicito
 var idUser;
 idUser = 1; // number
@@ -11,4 +10,5 @@ otherId = '1';
 console.log('other id', otherId);
 var surprise = 'Hello typescript';
 //
-surprise.substring(6);
+var res = surprise.substring(6);
+console.log('res', res);
